@@ -11,10 +11,15 @@ public class Main {
         //recipe
         Recipe beefWellington = new Recipe("Beef Wellington", List.of("Beef", "Flour", "Eggs"));
 
+        for(int i = 0; i < 10; i ++){
+            rbTree.put(beefWellington.getName().hashCode() + i, beefWellington);
+        }
 
-        rbTree.put(beefWellington.getName().hashCode(), beefWellington);
 
 
+
+        //System.out.println(rbTree.find(0));
+        rbTree.printTree();
 
     }
 }

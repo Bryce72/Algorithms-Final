@@ -2,9 +2,9 @@ import java.util.List;
 
 public class Recipe {
 
-    private String name;
-    private List<String> ingredients;
-    private String instructions;
+    private static String name;
+    private static List<String> ingredients;
+
 
 
     public Recipe(String name, List<String> ingredients){
@@ -12,11 +12,11 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public String getName(){
+    public static String getName(){
         return name;
     }
 
-    public List<String> getIngredients(){
+    public static List<String> getIngredients(){
         return ingredients;
     }
 

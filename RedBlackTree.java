@@ -352,4 +352,24 @@ public class RedBlackTree {
         replaced.value = v;
         doRemove(replaced);
     }
+
+    public void printTree(){
+        printTree(root,"",true);
+    }
+    private void printTree(Node node, String indent, boolean last) {
+        if (node != null) {
+            System.out.print(indent);
+            if (last) {
+                System.out.print("R----");
+                indent += "   ";
+            } else {
+                System.out.print("L----");
+                indent += "|  ";
+            }
+            String color= node.color == Color.RED ? "RED" : "BLACK";
+            System.out.println(Recipe.getName() + "(" + color + ")");
+            printTree(node.left, indent, false);
+            printTree(node.right, indent, true);
+        }
+    }
 }
