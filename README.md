@@ -11,3 +11,12 @@ Efficient data storage and retrieval are critical in applications where data is 
     - public void remove(int key), is to remove node by key value
 
 We can include the ingredients from the recipe in each node of the tree, allowing us to implement the entire program through adding, deleting, modifying, and querying.
+
+
+#### Running result introduction
+keep put node into two trees, loop will run multiple times, each time with a different value of i (e.g., 10, 210, 410, ..., 50000). The outer for loop runs with i starting at 10 and increases by 200 in each iteration, until it reaches 50000.
+
+Inside the loop, i represents the number of times the put() method will be called on both the RedBlackTree and normalBinaryTree. For each value of i, i elements are inserted into each tree.
+
+When i = 10, the code inserts 10 elements into both trees and records the time taken for these insertions.
+When i = 210, it inserts 210 elements into both trees and records the time again.
