@@ -8,8 +8,8 @@ public class Recipe {
 
 
     public Recipe(String name, List<String> ingredients){
-        this.name = name;
-        this.ingredients = ingredients;
+        Recipe.name = name;
+        Recipe.ingredients = ingredients;
     }
 
     public static String getName(){
